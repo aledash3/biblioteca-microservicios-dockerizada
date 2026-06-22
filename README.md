@@ -196,26 +196,6 @@ Endpoints principales:
 | PUT    | `/api/orders/{id}` | Actualiza una orden       |
 | DELETE | `/api/orders/{id}` | Elimina una orden         |
 
----
-
-# 🔐 Variables de Entorno
-
-El proyecto utiliza un archivo `.env` para centralizar las variables de configuración.
-
-Ejemplo:
-
-```env
-POSTGRES_DB=library_db
-POSTGRES_USER=library_user
-POSTGRES_PASSWORD=library_pass_2026
-
-DB_HOST=db
-DB_PORT=5432
-
-NGINX_HOST_PORT=8080
-```
-
-> El archivo `.env` contiene información sensible y no debe subirse a repositorios públicos.
 
 ---
 
@@ -312,7 +292,7 @@ El proyecto fue probado en Ubuntu con Docker Compose.
 ## 1. Clonar el repositorio
 
 ```bash
-git clone <URL_DEL_REPOSITORIO>
+git clone https://github.com/aledash3/biblioteca-microservicios-dockerizada
 cd Taller_DockerCompose
 ```
 
@@ -321,11 +301,11 @@ cd Taller_DockerCompose
 Crear un archivo `.env` en la raíz del proyecto:
 
 ```env
-POSTGRES_DB=library_db
-POSTGRES_USER=library_user
-POSTGRES_PASSWORD=library_pass_2026
+POSTGRES_DB=***
+POSTGRES_USER=***
+POSTGRES_PASSWORD=***
 
-DB_HOST=db
+DB_HOST=***
 DB_PORT=5432
 
 NGINX_HOST_PORT=8080
