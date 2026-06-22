@@ -151,8 +151,8 @@ Entidad principal:
 ```json
 {
   "id": 1,
-  "name": "Cristian Ati",
-  "email": "cristian@example.com"
+  "name": "David Cruz",
+  "email": "david@example.com"
 }
 ```
 
@@ -178,7 +178,7 @@ Entidad principal:
 {
   "id": 1,
   "user_id": 1,
-  "user_name": "Cristian Ati",
+  "user_name": "David Cruz",
   "book_id": 1,
   "book_title": "El Principito",
   "quantity": 2,
@@ -423,7 +423,7 @@ curl -i -X DELETE http://localhost:8080/api/books/1
 ```bash
 curl -i -X POST http://localhost:8080/api/users/ \
   -H "Content-Type: application/json" \
-  -d '{"name":"Cristian Ati","email":"cristian@example.com"}'
+  -d '{"name":"David Cruz","email":"david@example.com"}'
 ```
 
 ### Consultar usuarios
@@ -443,7 +443,7 @@ curl http://localhost:8080/api/users/1
 ```bash
 curl -i -X PUT http://localhost:8080/api/users/1 \
   -H "Content-Type: application/json" \
-  -d '{"name":"Cristian Ati Actualizado","email":"cristian.updated@example.com"}'
+  -d '{"name":"David Cruz Actualizado","email":"david.updated@example.com"}'
 ```
 
 ### Eliminar usuario
